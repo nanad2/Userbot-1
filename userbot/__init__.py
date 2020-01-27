@@ -50,11 +50,11 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_KEY = os.environ.get("API_KEY", "931348")
+API_HASH = os.environ.get("API_HASH", "739dd8ea860bf99f97e7e48844fc68f7")
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOMgBu3QUxfHQ12afjjOR_O6-2YPIlrI5psh4EebF-YnYCgtCPnXVAAMTcgvgx6GTbxYlTSrmmUuqTIW4a2ZqqwXmX0XmeGWYM_HqkAPfK5UXvaeLgRanq_gAfSGEWHQuHurFQQ9KJlft30dtoeobCSwW0cxWbBL62CEeihA_5ZPwkedwhhMCpYLC33EsF4Yh8buEIkGwLQIxWgnEjHEvSggcK26RfF_GV_SBX5to-6ZnHfwsN1w3F4vdieHxN3l1t3iVkAUnH8tvOgMpcnZsUMqmYfQPrPAOi3dMrylwEbobDQH3vc7-x0Ewnv__HTXxtmaqLolt5tVNDqoOgZUrKZEOAA8=")
 
 # Logging channel/group ID configuration.
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
@@ -67,8 +67,8 @@ LOGSPAMMER = sb(os.environ.get("LOGSPAMMER", "False"))
 PM_AUTO_BAN = sb(os.environ.get("PM_AUTO_BAN", "False"))
 
 # Heroku Credentials for updater.
-HEROKU_APPNAME = os.environ.get("HEROKU_APPNAME", None)
-HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", None)
+HEROKU_APPNAME = os.environ.get("HEROKU_APPNAME", "nadia")
+HEROKU_APIKEY = os.environ.get("HEROKU_APIKEY", "752f7b80-fc91-4bec-bea8-3faba9d6ff83")
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
@@ -82,17 +82,18 @@ CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
 DB_URI = os.environ.get("DATABASE_URL", None)
 
 # OCR API key
-OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
+OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", "752f7b80-fc91-4bec-bea8-3faba9d6ff83")
 
 # remove.bg API key
-REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", None)
+REM_BG_API_KEY = os.environ.get("REM_BG_API_KEY", "MHQr16TNZzB7uirVaw8CuR7q")
 
 # Chrome Driver and Headless Google Chrome Binaries
 CHROME_DRIVER = os.environ.get("CHROME_DRIVER", None)
 GOOGLE_CHROME_BIN = os.environ.get("GOOGLE_CHROME_BIN", None)
 
 # OpenWeatherMap API Key
-OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", None)
+OPEN_WEATHER_MAP_APPID = os.environ.get("OPEN_WEATHER_MAP_APPID", "453c8d91be09c83bb668b6663d092a2a
+")
 WEATHER_DEFCITY = os.environ.get("WEATHER_DEFCITY", None)
 
 # Anti Spambot Config
@@ -106,7 +107,7 @@ YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
 
 # Time & Date - Country and Time Zone
-COUNTRY = str(os.environ.get("COUNTRY", ""))
+COUNTRY = str(os.environ.get("COUNTRY", "indonesia"))
 TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
 
 # Clean Welcome
@@ -116,10 +117,10 @@ CLEAN_WELCOME = sb(os.environ.get("CLEAN_WELCOME", "True"))
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
 DEFAULT_BIO = os.environ.get("DEFAULT_BIO", None)
 
-LASTFM_API = os.environ.get("LASTFM_API", None)
-LASTFM_SECRET = os.environ.get("LASTFM_SECRET", None)
-LASTFM_USERNAME = os.environ.get("LASTFM_USERNAME", None)
-LASTFM_PASSWORD_PLAIN = os.environ.get("LASTFM_PASSWORD", None)
+LASTFM_API = os.environ.get("LASTFM_API", "2ae22a8a8ebcbfecb773bb8c6178d369")
+LASTFM_SECRET = os.environ.get("LASTFM_SECRET", "530a1d9fb796e5c94734a3ca5f1ce4ee")
+LASTFM_USERNAME = os.environ.get("LASTFM_USERNAME", "nanad3")
+LASTFM_PASSWORD_PLAIN = os.environ.get("LASTFM_PASSWORD", "H3rm@n473")
 LASTFM_PASS = md5(LASTFM_PASSWORD_PLAIN)
 if LASTFM_API and LASTFM_SECRET and LASTFM_USERNAME and LASTFM_PASS:
     lastfm = LastFMNetwork(api_key=LASTFM_API,
